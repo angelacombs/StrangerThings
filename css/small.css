@@ -2,13 +2,14 @@
 html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 /*Set the box sizing model to border box which means padding is added inside margin is added to outside*/
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+/*This is only needed to be in the small.css file and the asterisk says the rule applies to 
+every single tag on page*/
+*{ -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
     }
 
-/*Code to make sure we're using mobile first design*/    
+/*Media Queries - Screens smaller than 768px and wider 1024px will be ignored and not Black*/    
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-h1 {color: red;}
+    h1 {color: black;}
 }
 
 .column {float: left; padding: 0 2vw; margin: 0 0 .75rem 0;}
@@ -16,7 +17,6 @@ h1 {color: red;}
 
 /*Header rules*/
 header {
-    background-color: red;
     font-size: 45px;
     text-align: center;
 }
@@ -28,19 +28,21 @@ h4
     padding: .5rem 0 0 0;
     font-size: 1.95rem;
     color: white
+    
 }
 
 h2 {
-    text-align: center;
+    text-align: Left;
+    font-size: 2rem;
 }
 
 h3 {
-    text-align: center;
+    text-align: Left;
     font-size: 2rem;
 }
 
 h4 {
-    text-align: center;
+    text-align: left;
 }
 
 header img {
@@ -60,7 +62,6 @@ button#hamburgerBtn {
     }
 
 /*Styling for navigation*/
-nav {background-color: red}
 nav ul {margin: 0; padding: 0}
 nav ul li {list-style-type: none;}
 nav a {
@@ -72,33 +73,23 @@ nav a {
     }
 
 /*Additional styling making what user selects in list a bit darker before selecting*/
-nav li.active {background-color: rgba(0,0,0,0.5)}*/
-nav a:hover {background-color: rgba (0, 0, 0, 0.2);}
+nav li.active {background-color: brown}*/
+-nav a:hover {background-color: brown;}
+nav a:hover {background-color: brown;}
 nav ul.open {display: block;}
 nav ul {display: none;}
 
+
 body {
-    font-family: 'Lato', sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
     font-weight: 300;
     color: white;
     background-color: black;
 }
 
-
-p {
-    color:white
-}
-
 footer h1 {
-    background-color: #9b87b8;
     font-size: 1.2rem;
-}
-
-footer h2 {
-    font-size: italic;
-    text-transform: uppercase;
-    margin: 1rem 0 .3rem 0;
 }
 
 
@@ -107,3 +98,13 @@ footer h2 {
     display: table;
     clear: both;
 }
+
+table,
+        td,
+        th {
+            border: 2px solid white;
+            border-collapse: collapse;
+            padding: 15px;
+            font-weight:500;
+        }
+

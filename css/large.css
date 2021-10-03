@@ -1,10 +1,15 @@
 /*Code to make sure we're using mobile first design*/   
-@media only screen and (min-width: 1024px) {
-    .large-3 {width: 25%;}
-}
+@media only screen and (min-width: 1024px) 
 
+{
+/*Below will hide hamburger button when medium screen size*/
 nav ul {margin-left: 2vw;}
-nav li{width:auto;}
-nav a {padding: .7rem 1rem;}
+nav li {width:auto;}
+nav a {padding: .7rem 7rem;}
+
+
+
+
 
 .large-3 {width: 25%;}
+}
