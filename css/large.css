@@ -4,8 +4,8 @@
 {
 /*Below will hide hamburger button when medium screen size*/
 nav ul {margin-left: 2vw;}
-nav li {width:auto;}
-nav a {padding: .7rem 7rem;}
+nav li {width: auto;}
+nav a {padding: .7rem 1rem;}
 
 
 

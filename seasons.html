@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Home | My Stranger Things Page</title>
-    <meta name="author" content="My Stranger Things Page">
+    <meta name="author" content="Angela Combs">
     <meta name="description" content="Stranger Things Main Page">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="icon" type="image/png" href="pics/demo.png">
@@ -15,11 +15,15 @@
 </head>
 
 <body>
-    <header>
-    <!--Below is code to create link within the icon-->
-        <a href="index.html"><img src="pics/demo.png"/></a>
-        <h1>Seasons</h1>
-    </header>
+    <header class="clearfix">
+        <div class="row limited">
+            <section class="column small-12">
+             <!--Below is code to create link within the icon-->
+             <a href="index.html"><img src="pics/demo.png"/></a>
+            <h1>Seasons</h1>
+            </section>
+        </div>
+        </header>
    
     <nav class="clearfix">
         <div class="row limited"></div>
@@ -38,16 +42,37 @@
     <!--Add horizontal break in page <hr>-->
     <hr>
     
-       
-   
-    
-    
-    <footer>
-        <p>Contact me via <a href="mailto:acom_333@yahoo.com">email</a></p>
-        <small>&copy; 2021 My Stranger Things - All rights reserved</small>
+    <footer class="clearfix">
+        <div class="row">
+            <section class="column small-12 medium-6 large-3">
+                <h3>Contact</h3>
+                <ul class="no-bullets">
+                    <li>555-444-3333</li>
+                    <li><a href="mailto:acom_333@yahoo.com">Email</a></li>
+                </ul>
+            </section>
+            <section class="column small-12 medium-6 large-3">
+                <h3>Company</h3>
+                <ul class="no-bullets">
+                    <li>Clothing</li>
+                    <li>Collectibles</li>
+                </ul>
+            </section>   
+            <section class="column small-12 medium-6 large-3">
+                <h3>Social</h3>
+                <ul class="no-bullets">
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                </ul>
+            </section>   
+            <section class="column small-12 medium-6 large-3">
+                <h3>About Us</h3>
+                <img src="pics/Stranger-Things-Logo-featured.jpg" width="200" alt="logo">
+                <p>&copy; 2021 &bull; All Rights Reserved</p>   
+            </section>
     </footer>
-    
-
+        </div>
+        <script src="js/menuToggle.js"></script>
 </body>
-
 </html>

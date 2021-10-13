@@ -1,67 +1,50 @@
 /*Prevent text adjust when you move phone to landscape*/
 html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
-/*Set the box sizing model to border box which means padding is added inside margin is added to outside*/
+/*Set the box sizing model to border box which means padding is added inside and margin is added to outside*/
 /*This is only needed to be in the small.css file and the asterisk says the rule applies to 
 every single tag on page*/
-*{ -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
-    }
+*{ -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
 
 /*Media Queries - Screens smaller than 768px and wider 1024px will be ignored and not Black*/    
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    h1 {color: black;}
+    h1 {color: red;}
 }
-
-.column {float: left; padding: 0 2vw; margin: 0 0 .75rem 0;}
-.small-12 {width: 100%;}
 
 /*Header rules*/
-header {
+header h1 {
     font-size: 45px;
     text-align: center;
-}
-
-header 
-h2,
-h4
-{
-    padding: .5rem 0 0 0;
-    font-size: 1.95rem;
-    color: white
-    
+    color:white;
 }
 
 h2 {
-    text-align: Left;
-    font-size: 2rem;
-}
-
-h3 {
-    text-align: Left;
-    font-size: 2rem;
-}
-
-h4 {
+    font-size: 30px;
     text-align: left;
 }
 
+
+
 header img {
-    float:left;
-    height: 300px;
-    padding-right: 10px;
+    float: right;
+    max-width: fit-content;
+    height: auto;
 }
+
+
 
 /*Styling for hamgurger button*/
 button#hamburgerBtn { 
     background: none;
-    border:none;
-    color: #fff;
+    border: none;
+    color:#fff;
     font-size: 2.4rem;
     cursor: pointer;
     padding: 0 30px 0 2vw;
-    }
+}
 
-/*Styling for navigation*/
+/*Styling for navigation and UL*/
+nav {background-color: rgb(117, 102, 102);}
 nav ul {margin: 0; padding: 0}
 nav ul li {list-style-type: none;}
 nav a {
@@ -70,41 +53,88 @@ nav a {
     color: #eee;
     text-align: center;
     text-decoration: none;
-    }
+}
+
+
+
+/*Remove bullets from footer list*/
+ul.no-bullets {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+    
 
 /*Additional styling making what user selects in list a bit darker before selecting*/
-nav li.active {background-color: brown}*/
--nav a:hover {background-color: brown;}
-nav a:hover {background-color: brown;}
+li.active {background-color: brown;}
+nav a:hover {background-color: rgb(138, 64, 64);}
 nav ul.open {display: block;}
 nav ul {display: none;}
 
 
 body {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: sans-serif;
     font-size: 16px;
     font-weight: 300;
-    color: white;
-    background-color: black;
+    color:white;
+    background-color:black;
 }
 
-footer h1 {
+/*Grid Rules for footer*/
+.row {clear: both;}
+.limited {
+    max-width: 1140px;
+    margin: auto;
+}
+
+/*Footer column styling*/
+.column {float:left; padding:0 2vw; margin: 0 0 .75rem 0;}
+.small-12 {width:100%;}
+
+
+footer {
     font-size: 1.2rem;
 }
 
 
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-table,
+/*Styling for table alternating red/grey for rows and center in page*/
+        table,
         td,
         th {
             border: 2px solid white;
             border-collapse: collapse;
-            padding: 15px;
+            padding: 10px;
             font-weight:500;
         }
 
+        tr:nth-of-type(odd) {
+            background-color:brown;
+        }
+        
+        tr:nth-of-type(even) {
+            background-color: rgb(136, 121, 121);
+        }
+
+        .merch-table {
+            margin-left: auto;
+            margin-right: auto;
+          }
+
+/*Styling for caption above Merch table*/
+caption {
+    font-size:1.5rem;
+    padding-bottom:1rem;
+    color:red;
+}
+
+.clearfix:after {
+    content: "";
+    display:table;
+    clear:both;
+}
+
+  
+  .responsive {
+    width: 100%;
+    height: auto;
+  }
