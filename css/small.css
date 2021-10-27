@@ -11,29 +11,31 @@ every single tag on page*/
     h1 {color: red;}
 }
 
-/*Header rules*/
-header h1 {
-    font-size: 45px;
-    text-align: center;
+/*Header styling*/
+header {
+    background-color:rgb(117, 102, 102);
+}
+
+header h1, header h2 {
     color:white;
+    font-weight: 300;
 }
 
-h2 {
-    font-size: 30px;
-    text-align: left;
+header h1 {
+    margin: 1rem 0 .3rem 0;
+    
 }
-
-
 
 header img {
     float: right;
     max-width: fit-content;
-    height: auto;
+    height: 85px;
+    padding: .5rem 0 0 0;
 }
 
 
 
-/*Styling for hamgurger button*/
+/*Hamgurger button styling*/
 button#hamburgerBtn { 
     background: none;
     border: none;
@@ -43,9 +45,9 @@ button#hamburgerBtn {
     padding: 0 30px 0 2vw;
 }
 
-/*Styling for navigation and UL*/
-nav {background-color: rgb(117, 102, 102);}
-nav ul {margin: 0; padding: 0}
+/*Navigation and UL Styling*/
+/*nav {background-color: rgb(117, 102, 102);}*/
+nav ul {margin: 0; padding: .5rem 0 0 0}
 nav ul li {list-style-type: none;}
 nav a {
     display: block;
@@ -55,17 +57,7 @@ nav a {
     text-decoration: none;
 }
 
-
-
-/*Remove bullets from footer list*/
-ul.no-bullets {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-    
-
-/*Additional styling making what user selects in list a bit darker before selecting*/
+/*Wayfinding - Additional styling for making the hovered selection in list a bit darker before selecting*/
 li.active {background-color: brown;}
 nav a:hover {background-color: rgb(138, 64, 64);}
 nav ul.open {display: block;}
@@ -77,27 +69,12 @@ body {
     font-size: 16px;
     font-weight: 300;
     color:white;
-    background-color:black;
-}
-
-/*Grid Rules for footer*/
-.row {clear: both;}
-.limited {
-    max-width: 1140px;
-    margin: auto;
-}
-
-/*Footer column styling*/
-.column {float:left; padding:0 2vw; margin: 0 0 .75rem 0;}
-.small-12 {width:100%;}
+    background-color:black; 
+    padding: .5rem;
+} 
 
 
-footer {
-    font-size: 1.2rem;
-}
-
-
-/*Styling for table alternating red/grey for rows and center in page*/
+/*Table alternating red/grey for rows*/
         table,
         td,
         th {
@@ -115,16 +92,98 @@ footer {
             background-color: rgb(136, 121, 121);
         }
 
-        .merch-table {
-            margin-left: auto;
-            margin-right: auto;
-          }
 
-/*Styling for caption above Merch table*/
+/* Added this code for table, it will hide certain columns and data when on small screens*/
+@media screen and (max-width: 768px) {
+    .tohide {display: none;}
+}
+
+.colHidden {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*Caption above Merch table*/
 caption {
     font-size:1.5rem;
     padding-bottom:1rem;
     color:red;
+}
+
+ 
+/*Responsive images styling*/
+.responsive {
+    max-width: 100%;
+    height: auto;
+  }
+
+/*Video-container for youtube vids*/
+/*Also, setting padding to 56.25% we have a 16:9 scaling size.*/
+
+.frame-border {
+    border: 3px solid #fff;
+}
+
+.video {
+    width: 50%;
+    background-color:rgb(117, 102, 102);
+    
+} 
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    width: 100%
+ } 
+
+ 
+ .video-container iframe {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 100%;
+    width: 100%;
+    padding: 5%;
+ } 
+
+ 
+/*Grid styling rules for footer*/
+
+.row {clear: both;}
+.limited {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.column {float:left; padding:0 2vw; margin: 0 0 .75rem 0;}
+.small-12 {width:100%;}
+.small-6 {width:50%}
+
+
+footer {
+    background-color: rgb(117, 102, 102);
+    font-size: 1rem;
+    text-align: center;
+}
+
+footer h3 {
+    font-style: italic;
+    text-transform: uppercase;
+    margin: 1rem 0 .3rem 0;
+}
+
+
+/*Remove bullets from footer list*/
+
+ul.no-bullets {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .clearfix:after {
@@ -133,8 +192,49 @@ caption {
     clear:both;
 }
 
-  
-  .responsive {
-    width: 100%;
-    height: auto;
+
+
+
+/*Test code for imgs on character page*/
+
+* {
+    margin: 0;
+    padding: 0;
   }
+  
+
+  .wrapper {
+    margin: 0 auto;
+    width: 1000px;
+  }
+  
+  
+  /*Below is code for character images and hover effect*/
+  .img-dustin {
+    width: 320px;
+    height: 180px;
+    background-image: url(/pics/Season1-Dustin.jpg);
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-position: center left;
+    border-radius: 15px;
+  }
+  
+  .img-dustin:hover {
+    background-size: 100%;
+  }
+  
+  .img-eleven {
+    width: 320px;
+    height: 180px;
+    background-image: url(/pics/Season1-Eleven.jpg);
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-position: center left;
+    border-radius: 15px;
+  }
+  
+  .img-eleven:hover {
+    background-size: 100%;
+  }
+
