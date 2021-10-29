@@ -8,20 +8,21 @@ every single tag on page*/
 
 /*Media Queries - Screens smaller than 768px and wider 1024px will be ignored and not Black*/    
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    h1 {color: red;}
+    h2 {color: red;}
 }
 
 /*Header styling*/
 header {
     background-color:rgb(117, 102, 102);
+    text-align: center;
 }
 
-header h1, header h2 {
-    color:white;
+h1, h2 {
+    color: white;
     font-weight: 300;
 }
 
-header h1 {
+h1 {
     margin: 1rem 0 .3rem 0;
     
 }
@@ -29,7 +30,7 @@ header h1 {
 header img {
     float: right;
     max-width: fit-content;
-    height: 85px;
+    height: 75px;
     padding: .5rem 0 0 0;
 }
 
@@ -65,14 +66,13 @@ nav ul {display: none;}
 
 
 body {
-    font-family: sans-serif;
+    font-family: "roboto slab", sans-serif;
     font-size: 16px;
     font-weight: 300;
     color:white;
     background-color:black; 
     padding: .5rem;
 } 
-
 
 /*Table alternating red/grey for rows*/
         table,
@@ -124,12 +124,13 @@ caption {
 
 .frame-border {
     border: 3px solid #fff;
+    padding: 3%;
+    background-color: rgb(122, 100, 100);
 }
 
 .video {
     width: 50%;
     background-color:rgb(117, 102, 102);
-    
 } 
 
 .video-container {
@@ -151,65 +152,21 @@ caption {
     padding: 5%;
  } 
 
+ .flex-video-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
  
-/*Grid styling rules for footer*/
-
-.row {clear: both;}
-.limited {
-    max-width: 1140px;
-    margin: auto;
-}
-
-.column {float:left; padding:0 2vw; margin: 0 0 .75rem 0;}
-.small-12 {width:100%;}
-.small-6 {width:50%}
-
-
-footer {
-    background-color: rgb(117, 102, 102);
-    font-size: 1rem;
-    text-align: center;
-}
-
-footer h3 {
-    font-style: italic;
-    text-transform: uppercase;
-    margin: 1rem 0 .3rem 0;
-}
-
-
-/*Remove bullets from footer list*/
-
-ul.no-bullets {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.clearfix:after {
-    content: "";
-    display:table;
-    clear:both;
-}
-
-
-
-
-/*Test code for imgs on character page*/
-
-* {
-    margin: 0;
-    padding: 0;
-  }
-  
-
-  .wrapper {
-    margin: 0 auto;
-    width: 1000px;
-  }
-  
-  
-  /*Below is code for character images and hover effect*/
+/*Below is code for character images and hover effect*/
   .img-dustin {
     width: 320px;
     height: 180px;
@@ -217,7 +174,6 @@ ul.no-bullets {
     background-size: 200%;
     background-repeat: no-repeat;
     background-position: center left;
-    border-radius: 15px;
   }
   
   .img-dustin:hover {
@@ -231,10 +187,165 @@ ul.no-bullets {
     background-size: 200%;
     background-repeat: no-repeat;
     background-position: center left;
-    border-radius: 15px;
   }
   
   .img-eleven:hover {
     background-size: 100%;
   }
+
+  .img-mike {
+    width: 320px;
+    height: 180px;
+    background-image: url(/pics/Season1-Mike.jpg);
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-position: center left;
+  }
+  
+  .img-mike:hover {
+    background-size: 100%;
+  }
+
+  .img-hopper {
+    width: 320px;
+    height: 180px;
+    background-image: url(/pics/Season1-Hopper.jpg);
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-position: center left;
+  }
+  
+  .img-hopper:hover {
+    background-size: 100%;
+  }
+
+  .img-lucas {
+    width: 320px;
+    height: 180px;
+    background-image: url(/pics/Season1-Lucas.jpg);
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-position: center left;
+  }
+  
+  .img-lucas:hover {
+    background-size: 100%;
+  }
+
+  .img-steve {
+    width: 320px;
+    height: 180px;
+    background-image: url(/pics/Season1-Steve.jpg);
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-position: center left;
+  }
+  
+  .img-steve:hover {
+    background-size: 100%;
+  }
+
+  .img-will {
+    width: 320px;
+    height: 180px;
+    background-image: url(/pics/Season1-Will.jpg);
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-position: center left;
+  }
+  
+  .img-will:hover {
+    background-size: 100%;
+  }
+
+  .img-nancy {
+    width: 320px;
+    height: 180px;
+    background-image: url(/pics/Season1-Nancy.jpg);
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-position: center left;
+  }
+  
+  .img-nancy:hover {
+    background-size: 100%;
+  }
+
+  .img-joyce {
+    width: 320px;
+    height: 180px;
+    background-image: url(/pics/Season1-Joyce.jpg);
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-position: center left;
+  }
+  
+  .img-joyce:hover {
+    background-size: 100%;
+  }
+
+/*Flexbox layout for character images*/
+ .flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+
+.flex-item {
+  padding: 20px;
+}
+
+span {
+  display: block;
+  background: rgba(201, 196, 196, 0.3);
+  color: black;
+  padding: 10px 5px;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+/*Grid styling rules for footer*/
+.row {clear: both;}
+.limited {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.column {float:left; padding:0 2vw; margin: 0 0 .75rem 0;}
+.small-12 {width:100%;}
+.small-6 {width:50%}
+
+/*Footer styling*/
+footer {
+  background-color: rgb(117, 102, 102);
+  font-size: 1rem;
+  text-align: center;
+}
+
+footer h3 {
+  font-style: italic;
+  text-transform: uppercase;
+  margin: 1rem 0 .3rem 0;
+}
+
+/*Remove bullets from footer list*/
+ul.no-bullets {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix:after {
+  content: "";
+  display:table;
+  clear:both;
+}
 

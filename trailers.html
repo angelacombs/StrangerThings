@@ -1,98 +1,105 @@
 <!DOCTYPE html>
 <html lang='en'>
     
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <link rel="icon" type="image/ico" href="pics/favicon.ico">
-        <link href="css/normalize.css" rel="stylesheet">
-        <link href="css/small.css" rel="stylesheet">
-        <link href="css/medium.css" rel="stylesheet">
-        <link href="css/large.css" rel="stylesheet">
-        <title>Season Trailers | My Stranger Things Page</title>
-        <meta name="author" content="Angela Combs">
-        <meta name="description" content="My Stranger Things Main Page">
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" type="image/ico" href="pics/favicon.ico">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+    <link rel="stylesheet" href=<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <title>Trailers | My Stranger Things Page</title>
+    <meta name="author" content="Angela Combs">
+    <meta name="description" content="My Stranger Things Main Page">
+</head>
 
 <body>
     <header class="clearfix">
+<!--Using row/column approach to the design of the page-->
         <div class="row limited">
             <section class="column small-12">
-    <!--Below is code to create link within the icon-->
-        <a href="index.html"><img src="pics/demo.png"/></a>
+<!--Below is code to create link within the icon-->
+         <a href="index.html"><img src="pics/demo.png"/></a>
         <h1>Season Trailers</h1>
             </section>
         </div>
     </header>
-   
-    <nav class="clearfix">
-        <div class="row limited">
-        <button id="hamburgerBtn">&#9776;</button>
-        <ul id="primaryNav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="characters.html">Characters</a></li>
-            <li><a href="merch.html">Merchandise</a></li>
-            <li class="active"><a href="trailers.html">Trailers</a></li>
+
+<!--Add horizontal line in page-->
+<hr>
+
+<nav class="clearfix">
+    <div class="row limited">
+    <button id="hamburgerBtn">&#9776;</button>
+    <ul id="primaryNav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="characters.html">Characters</a></li>
+        <li><a href="merch.html">Merchandise</a></li>
+        <li class="active"><a href="trailers.html">Trailers</a></li>
+    </ul>
+    </div>
+</nav>
+
+<!--Add horizontal line and break-->
+<hr>
+<br>
+
+
+<main>
+<!--Flexbox coding for characters-->
+    <div class="row limited">
+    <section>
+        <ul class="flex-video-container">
+            <iframe class="frame-border" width="560" height="315" src="https://www.youtube.com/embed/b9EkMc79ZSU?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="frame-border" width="560" height="315" src="https://www.youtube.com/embed/R1ZXOOLMJ8s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="frame-border" width="560" height="315" src="https://www.youtube.com/embed/NUVMw0FSmyw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="frame-border" width="560" height="315" src="https://www.youtube.com/embed/gM5OVZtq8xM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </ul>
-        </div><!--End row-->
-    </nav>
+    </div>
+    </section>
+    </main>
 
-    <!--Add horizontal break in page <hr>-->
-    <hr>
-      
-        
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/b9EkMc79ZSU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div><!--End of video-container-->
-       
-        <br>
+<!--Add break in page-->
+    <br>
+    <footer class="clearfix">
+        <div class="row limited">
+            <section class="column small-12 medium-6 large-3">
+                <h3>Contact</h3>
+                <ul class="no-bullets">
+                    <li>555-444-3333</li>
+                    <li><a href="mailto:acom_333@yahoo.com">Email</a></li>
+                </ul>
+            </section>
+            <section class="column small-12 medium-6 large-3">
+                <h3>Company</h3>
+                <ul class="no-bullets">
+                    <li>Clothing</li>
+                    <li>Collectibles</li>
+                </ul>
+            </section>   
+            <section class="column small-12 medium-6 large-3">
+                <h3>Social</h3>
+                <ul class="no-bullets">
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                </ul>
+            </section>   
+            <section class="column small-12 medium-6 large-3">
+                <h3>About Us</h3>
+                <img src="pics/Stranger-Things-Logo-featured.jpg" width="200" alt="logo">
+                <p>&copy; 2021 &bull; All Rights Reserved</p>   
+            </section>
+    </footer>
+</div>
 
-            <footer class="clearfix">
-                <div class="row limited">
-                    <section class="column small-12 medium-6 large-3">
-                        <h3>Contact</h3>
-                        <ul class="no-bullets">
-                            <li>555-444-3333</li>
-                            <li><a href="mailto:acom_333@yahoo.com">Email</a></li>
-                        </ul>
-                    </section>
-                    <section class="column small-12 medium-6 large-3">
-                        <h3>Company</h3>
-                        <ul class="no-bullets">
-                            <li>Clothing</li>
-                            <li>Collectibles</li>
-                        </ul>
-                    </section>   
-                    <section class="column small-12 medium-6 large-3">
-                        <h3>Social</h3>
-                        <ul class="no-bullets">
-                            <li>Facebook</li>
-                            <li>Twitter</li>
-                            <li>Instagram</li>
-                        </ul>
-                    </section>   
-                    <section class="column small-12 medium-6 large-3">
-                        <h3>About Us</h3>
-                        <img src="pics/Stranger-Things-Logo-featured.jpg" width="200" alt="logo">
-                        <p>&copy; 2021 &bull; All Rights Reserved</p>   
-                    </section>
-            </footer>
-                </div<!--End of footer row-->
-        
-                <script src="js/menuToggle.js"></script>
-        
+<!--Add JS hamburger menu toggle for small screens-->
+        <script src="js/menuToggle.js"></script>
 </body>
-        </html>
-
-    
-    
- 
-
-   
-    
-   
-    
-
-</body>
-
 </html>
+
+    
