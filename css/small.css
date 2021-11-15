@@ -34,8 +34,6 @@ header img {
     padding: .5rem 0 0 0;
 }
 
-
-
 /*Hamgurger button styling*/
 button#hamburgerBtn { 
     background: none;
@@ -70,7 +68,7 @@ body {
     font-size: 16px;
     font-weight: 300;
     color:white;
-    background-color:black; 
+    background-color:black;
     padding: .5rem;
 } 
 
@@ -140,7 +138,6 @@ caption {
     width: 100%
  } 
 
- 
  .video-container iframe {
     position: absolute;
     left: 0px;
@@ -348,4 +345,172 @@ ul.no-bullets {
   display:table;
   clear:both;
 }
+
+/*NOT USED HERE ONLY TESTED - Coding for countdown area
+.season4 h1, h2{
+  color: white;
+}
+
+.season4 {
+  color: brown;
+  font-size: larger;
+  font-weight: bold;
+  background-color: black;
+}
+*/
+
+/*Coding for login/sign up forms*/
+body {
+  margin: 0;
+  padding: 0;
+  /*background-size: cover;*/
+  /*background-repeat: no-repeat;*/
+  font-family : Verdana,Tahoma, sans-serif;
+}
+
+
+.loginformbackground {
+  margin: 0;
+  padding: 0;
+  background-image: url(/pics/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family : Verdana,Tahoma, sans-serif;
+}
+
+.box {
+  width: 380px;
+  height: 500px;
+  background-color:rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  margin: 8% auto 0;
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+.box img {
+ width:100px;
+ margin-top:-50px ;
+}
+
+.header {
+  width: 300px;
+  height: 50px;
+  text-transform: uppercase;
+  display: inline-flex;
+  padding-top: 20px;
+  padding-bottom: 0;
+  justify-content: space-between;
+}
+
+/*Form header when not selected*/
+.header a {
+ font-size: 20px;
+ text-decoration: none;
+ color: white;
+ display: inline-flex;
+ padding-left: 25px;
+ padding-right: 25px;
+ justify-content: center;
+ cursor:pointer;
+}
+
+/*Form header when selected*/
+.header .active {
+ color: brown;
+ font-weight: bold;
+ position: relative;
+}
+
+.header .active:after {
+ position: absolute;
+ border: none;
+ content: "";
+}
+
+#errorMsg{
+ color: white;
+ text-align: center;
+ font-size: 12px;
+ padding-bottom: 20px;
+
+}
+
+.content{
+ display: inline-flex;
+ overflow: hidden;
+}
+
+form {
+ position: relative;
+ display: inline-flex;
+ width: 100%;
+ height: 100%;
+flex-shrink: 0;
+flex-direction: column;
+transition: right 0.5s;
+}
+
+.login a{
+text-decoration: none;
+color: #ffffff;
+font-size: 15px;
+text-align: center;
+cursor: pointer;
+}
+
+.extend form {
+ right: 100%;
+}
+
+input[type=text], input[type=password], input[type=email]{
+ display:block;
+ position: relative;
+ border: 4px solid white;
+ padding: 12px;
+ margin-bottom: 15px;
+ width: 100%;
+ box-sizing: border-box;
+ font-size: 17px;
+ outline: none;
+}
+
+input[type=text]:hover,  input[type=password]:hover, input[type=email]:hover{
+ border: 4px solid brown;
+}
+
+input[type=submit]{
+ display:block;
+ position: relative;
+ border: 3px solid brown;
+ padding: 12px;
+ margin-bottom: 20px;
+ width: 100%;
+ border-radius: 25px;
+ background-color: rgb(36, 23, 73) ;
+ text-align:center;
+ font-size: 20px;
+ color: #ffffff;
+ cursor:pointer;
+ outline: none;
+}
+
+input[type=submit]:hover{
+  background-color:#ffffff;
+  color: #000000;
+  font-weight: bold;
+}
+
+input[type=checkbox]{
+ background-color:#df80ff;
+}
+#check{
+ margin-top: 10px;
+ text-align: left;
+ color: #ffffff;
+ font-size: 15px;
+}
+
 

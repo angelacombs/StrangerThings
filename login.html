@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang='en'>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="icon" type="image/ico" href="pics/favicon.ico">
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/small.css" rel="stylesheet">
+        <link href="css/medium.css" rel="stylesheet">
+        <link href="css/large.css" rel="stylesheet">
+        <link rel="stylesheet" href=<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+        <title>Login | My Stranger Things Page</title>
+        <meta name="author" content="Angela Combs">
+        <meta name="description" content="My Stranger Things Main Page">
+    </head>
+
+<body>
+<!--Begin login form coding-->
+    <div class="loginformbackground">    
+        <div class="box">
+            <img src="pics/xmasLights.gif">
+        <div class="page">
+            <div class="header"> <!--added login as part of name-->
+                <a id="login" class="active" href="#login">login</a>
+                <a id="signup" href="#signup">signup</a>
+        </div>
+    
+            <div id="errorMsg"></div>
+            <div class="content">
+<!--Using POST method instead of GET as it is supposed to be more secure-->
+<!--Begin login form coding-->
+                <form class="login" name="loginForm" onsubmit="return validateLoginForm()" method="POST">
+                    <input type="text" name="name" id="logName" placeholder="Username">
+                    <input type="password" name="password" id="logPassword" placeholder="Password">
+                    <div id="check">
+            </div>
+
+                <br>
+                <br>
+                    <input type="submit" value="Login">
+                </form>
+            
+<!--Begin signup form coding-->
+                <form class="signup" name="signupForm" onsubmit="return validateSignupForm()" method="POST">
+                    <input type="email" name="email" id="signEmail" placeholder="Email">
+                    <input type="text" name="name" id="signName" placeholder="Username">
+                    <input type="password" name="password" id="signPassword" placeholder="Password"><br>
+                    <input type="submit" value="SignUp">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+                <br>
+                <br>
+
+<footer class="clearfix">
+    <div class="row limited">
+        <section class="column small-12 medium-6 large-3">
+            <h3>Contact</h3>
+            <ul class="no-bullets">
+                <li>555-444-3333</li>
+                <li><a href="mailto:acom_333@yahoo.com">Email</a></li>
+            </ul>
+        </section>
+        <section class="column small-12 medium-6 large-3">
+            <h3>Company</h3>
+            <ul class="no-bullets">
+                <li>Clothing</li>
+                <li>Collectibles</li>
+            </ul>
+        </section>   
+        <section class="column small-12 medium-6 large-3">
+            <h3>Social</h3>
+            <ul class="no-bullets">
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+            </ul>
+        </section>   
+        <section class="column small-12 medium-6 large-3">
+            <h3>About Us</h3>
+            <img src="pics/Stranger-Things-Logo-featured.jpg" width="200" alt="logo">
+            <p>&copy; 2021 &bull; All Rights Reserved</p>   
+        </section>
+</footer>
+    </div>
+
+<!--JS coding-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>
