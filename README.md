@@ -20,7 +20,7 @@ it out since it's not yet being used.
 - Merch page using "nth-of-type" to change row colors in table.
 
 ### Login Form
-- Added login form with code validation for length of password and email info.
+- Added login form (login.html) with code validation for length of password and email info.
 - Error messages will be displayed and inform you when info isn't valid.
 - If you leave fields blank you'll receive an error message stating fields are mandatory.
 
