@@ -24,7 +24,11 @@ h1, h2 {
 
 h1 {
     margin: 1rem 0 .3rem 0;
-    
+}
+
+h2 {
+  font-weight: 800;
+  
 }
 
 header img {
@@ -167,7 +171,7 @@ caption {
   .img-dustin {
     width: 320px;
     height: 180px;
-    background-image: url(pics/Season1-Dustin.jpg);
+    background-image: url(../pics/Season1-Dustin.jpg);
     background-size: 200%;
     background-repeat: no-repeat;
     background-position: center left;
@@ -180,7 +184,7 @@ caption {
   .img-eleven {
     width: 320px;
     height: 180px;
-    background-image: url(pics/Season1-Eleven.jpg);
+    background-image: url(../pics/Season1-Eleven.jpg);
     background-size: 200%;
     background-repeat: no-repeat;
     background-position: center left;
@@ -193,7 +197,7 @@ caption {
   .img-mike {
     width: 320px;
     height: 180px;
-    background-image: url(pics/Season1-Mike.jpg);
+    background-image: url(../pics/Season1-Mike.jpg);
     background-size: 200%;
     background-repeat: no-repeat;
     background-position: center left;
@@ -206,7 +210,7 @@ caption {
   .img-hopper {
     width: 320px;
     height: 180px;
-    background-image: url(pics/Season1-Hopper.jpg);
+    background-image: url(../pics/Season1-Hopper.jpg);
     background-size: 200%;
     background-repeat: no-repeat;
     background-position: center left;
@@ -219,7 +223,7 @@ caption {
   .img-lucas {
     width: 320px;
     height: 180px;
-    background-image: url(pics/Season1-Lucas.jpg);
+    background-image: url(../pics/Season1-Lucas.jpg);
     background-size: 200%;
     background-repeat: no-repeat;
     background-position: center left;
@@ -232,7 +236,7 @@ caption {
   .img-steve {
     width: 320px;
     height: 180px;
-    background-image: url(pics/Season1-Steve.jpg);
+    background-image: url(../pics/Season1-Steve.jpg);
     background-size: 200%;
     background-repeat: no-repeat;
     background-position: center left;
@@ -245,7 +249,7 @@ caption {
   .img-will {
     width: 320px;
     height: 180px;
-    background-image: url(pics/Season1-Will.jpg);
+    background-image: url(../pics/Season1-Will.jpg);
     background-size: 200%;
     background-repeat: no-repeat;
     background-position: center left;
@@ -258,7 +262,7 @@ caption {
   .img-nancy {
     width: 320px;
     height: 180px;
-    background-image: url(pics/Season1-Nancy.jpg);
+    background-image: url(../pics/Season1-Nancy.jpg);
     background-size: 200%;
     background-repeat: no-repeat;
     background-position: center left;
@@ -271,7 +275,7 @@ caption {
   .img-joyce {
     width: 320px;
     height: 180px;
-    background-image: url(pics/Season1-Joyce.jpg);
+    background-image: url(../pics/Season1-Joyce.jpg);
     background-size: 200%;
     background-repeat: no-repeat;
     background-position: center left;
