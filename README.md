@@ -9,21 +9,24 @@ it out since it's not yet being used.
 - Wayfinding feature used to show which page is currently being viewed/active.
 - Hamburger button built for navigation on small screens, it's hidden on larger screens.
 - Demogorgon image in upper right corner will take you back to the home page if you click on it.
+- Added login button to all pages.
+
+# Home Page 
 - Home page image will change to a different image when it's viewed on mobile screens.
 
-# Character Page
+## Character Page
 - Hover used for zoom in/out on image for each character.
 - Character page using Flexbox to display images and they adjust as screen gets smaller.
 
-## Merchandise Page
+### Merchandise Page
 - Merch table will hide details column and data on mobile screens.
 - Merch page using "nth-of-type" to change row colors in table.
 
-### Login Form
+#### Login Form
 - Added login form (login.html) with code validation for length of password and email info.
 - Error messages will be displayed and inform you when info isn't valid.
 - If you leave fields blank you'll receive an error message stating fields are mandatory.
-- I also added the login button to all pages and cancel button to the form itself which takes users back to home page.
+- I also added a cancel button to the form which takes users back to home page.
 
 - SIGN-UP form also has validation for email address (emails must have .com) and length of password (must be >8 characters).
     - Once you signup successfully, you'll be redirected to login page.
