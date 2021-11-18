@@ -23,9 +23,11 @@ it out since it's not yet being used.
 - Added login form (login.html) with code validation for length of password and email info.
 - Error messages will be displayed and inform you when info isn't valid.
 - If you leave fields blank you'll receive an error message stating fields are mandatory.
+- I also added the login button to all pages and cancel button to the form itself which takes users back to home page.
 
-- SIGN-UP form also has validation for email address (must have .com) and length of password (must be >8 characters).
+- SIGN-UP form also has validation for email address (emails must have .com) and length of password (must be >8 characters).
     - Once you signup successfully, you'll be redirected to login page.
+    
 - LOGIN form has validation code for length of password.
     - Once you login successfully, you'll be redirected to the home page.
 
