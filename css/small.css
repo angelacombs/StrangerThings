@@ -18,7 +18,6 @@ header {
   }
 
 h1, h2 {
-    color: white;
     font-weight: 300;
 }
 
@@ -175,6 +174,7 @@ caption {
   display: flex;
   -webkit-flex-flow: row wrap;
   justify-content: space-around;
+  /*-webkit-box-flex: row wrap;*/
 }
 
  
@@ -361,25 +361,10 @@ ul.no-bullets {
   clear:both;
 }
 
-/*NOT USED HERE ONLY TESTED - Coding for countdown area
-.season4 h1, h2{
-  color: white;
-}
-
-.season4 {
-  color: brown;
-  font-size: larger;
-  font-weight: bold;
-  background-color: black;
-}
-*/
-
 /*Coding for login/sign up forms*/
 body {
   margin: 0;
   padding: 0;
-  /*background-size: cover;*/
-  /*background-repeat: no-repeat;*/
   font-family : Verdana,Tahoma, sans-serif;
 }
 
@@ -536,4 +521,15 @@ input[type=checkbox]{
  font-size: 15px;
 }
 
+/*NOT USED HERE ONLY TESTED - Coding for countdown area
+.season4 h1, h2{
+  color: white;
+}
 
+.season4 {
+  color: brown;
+  font-size: larger;
+  font-weight: bold;
+  background-color: black;
+}
+*/
