@@ -6,6 +6,7 @@ This website is dedicated to the Netflix original series Stranger Things.  The s
 - Hamburger button built for navigation on small screens, it's hidden on larger screens.
 - Demogorgon image in upper right corner will take you back to the home page if you click on it.
 - Added login button to all pages.
+- My site is also published live https://angelacombs.github.io/StrangerThings/index.html  
 
 # Home Page 
 - Home page image will change to a different image when it's viewed on mobile screens.
@@ -13,6 +14,7 @@ This website is dedicated to the Netflix original series Stranger Things.  The s
 ## Character Page
 - Hover used for zoom in/out on image for each character.
 - Character page using Flexbox to display images and they adjust as screen gets smaller.
+- The hover feature doesn't work well when in mobile mode you have to hold down on picture to get it to zoom out.
 
 ### Merchandise Page
 - Merch table will hide details column and data on mobile screens.
